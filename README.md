@@ -24,7 +24,7 @@ The project will be presented in the following structure:
 **6. ROC curves analysis**
 
 ## 1. Data Access
-This section aims to combine all datasets into one that can be trained by the model.
+First of all, let's load up the dataset:
+![alt text](images/1.png)
 
-First of all, let's load up all datasets:
-![alt text](images/load_data.png)
+Also, data point will be droped if there is any missing piece within a client's data. We can see that the dataset has a dimension of 9998-by-14: 9998 client data points and 14 variables. The "Exited" variable indicates if the client left the bank or not (1 means the client left).
