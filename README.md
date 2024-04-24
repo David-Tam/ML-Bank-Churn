@@ -76,7 +76,7 @@ How are their account balance?
 Their salary?
 ![alt text](images/EstimatedSalary.png)
 
-
+### c) Correlation matrix
 Now let's see the correlation matrix for all relevant variables. Irrelevant variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset.
 ![alt text](images/2d.png)
 
