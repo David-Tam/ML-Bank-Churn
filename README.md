@@ -77,5 +77,8 @@ Their salary?
 ![alt text](images/EstimatedSalary.png)
 
 
-Four variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset before trainning as they are irrelevant variables.
+Now let's see the correlation matrix for all relevant variables. Irrelevant variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset.
 ![alt text](images/2d.png)
+
+The corresponding heat map:
+![alt text](images/corr_heatmap.png)
