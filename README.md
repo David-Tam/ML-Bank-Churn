@@ -24,7 +24,44 @@ The project will be presented in the following structure:
 **6. ROC curves analysis**
 
 ## 1. Data Access
-First of all, let's load up the dataset:
+First of all, let's load up the dataset. Note that a data point will be droped if there is any missing piece within a client's data.
 ![alt text](images/1.png)
 
-Also, data point will be droped if there is any missing piece within a client's data. We can see that the dataset has a dimension of 9998-by-14: 9998 client data points and 14 variables. The "Exited" variable indicates if the client left the bank or not (1 means the client left).
+It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
+
+## 2. Data Visualization
+Info of each variable can be accessed through pir charts.
+
+The "Exited" variable indicates if the client left the bank or not:
+![alt text](images/2a.png)
+
+### Categorical Variables
+A for-loop is used to visualize all categorical variables.
+![alt text](images/2b.png)
+
+Gender classification of clients:
+![alt text](images/Gender.png)
+
+Number of years the customers with the bank:
+![alt text](images/Tenure.png)
+
+Number of bank products clients using:
+![alt text](images/NumOfProducts.png)
+
+Do the clients have credit card (0 means no)?
+![alt text](images/HasCrCard.png)
+
+Where are the clients?
+![alt text](images/Geography.png)
+
+Are the clients active (0 means no)?
+![alt text](images/IsActiveMember.png)
+
+
+### Categorical Variables
+Similarly, a for-loop is used to visualize all continuous variables.
+![alt text](images/2c.png)
+
+
+Four variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset before trainning as they are irrelevant variables.
+![alt text](images/2d.png)
