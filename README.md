@@ -88,3 +88,19 @@ In this project, 90% of the data is used for training and 10% for testing. Of co
 ![alt text](images/3.png)
 
 For each categorical variable, dummy variables are created for each type within the categorical variable.
+
+## 4. XGB Classifier
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/4a.png)
+
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/4b.png)
+
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/4c.png)
+
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/4d.png)
+
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/4e.png)
