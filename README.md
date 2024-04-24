@@ -30,7 +30,7 @@ First of all, let's load up the dataset. Note that a data point will be droped i
 It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
 
 ## 2. Data Visualization
-Info of each variable can be accessed through pie charts. But first of all, let's see how much clients left the bank.
+Info of each variable can be accessed through pie charts. But let's have a look on how much clients left the bank.
 
 The "Exited" variable indicates if the client left the bank or not:
 ![alt text](images/2a.png)
@@ -61,8 +61,20 @@ Are the clients active (0 means no)?
 
 
 ### b) Continuous Variables
-Similarly, a for-loop is used to visualize all continuous variables.
+Similarly, a for-loop is used to visualize all continuous variables. Distribution of each client type (excited or not) will be shown in each continuous variable.
 ![alt text](images/2c.png)
+
+The credit score distributions:
+![alt text](images/CreditScore.png)
+
+Age distribution:
+![alt text](images/Age.png)
+
+How are their account balance?
+![alt text](images/Balance.png)
+
+Their salary?
+![alt text](images/EstimatedSalary.png)
 
 
 Four variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset before trainning as they are irrelevant variables.
