@@ -30,10 +30,12 @@ First of all, let's load up the dataset. Note that a data point will be droped i
 It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
 
 ## 2. Data Visualization
-Info of each variable can be accessed through pir charts.
+Info of each variable can be accessed through pie charts. But first of all, let's see how much clients left the bank.
 
 The "Exited" variable indicates if the client left the bank or not:
 ![alt text](images/2a.png)
+
+Now let's see all categorical and continuous variables in the dataset.
 
 ### a) Categorical Variables
 A for-loop is used to visualize all categorical variables.
