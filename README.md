@@ -35,7 +35,7 @@ Info of each variable can be accessed through pir charts.
 The "Exited" variable indicates if the client left the bank or not:
 ![alt text](images/2a.png)
 
-### Categorical Variables
+### a) Categorical Variables
 A for-loop is used to visualize all categorical variables.
 ![alt text](images/2b.png)
 
@@ -58,7 +58,7 @@ Are the clients active (0 means no)?
 ![alt text](images/IsActiveMember.png)
 
 
-### Categorical Variables
+### b) Continuous Variables
 Similarly, a for-loop is used to visualize all continuous variables.
 ![alt text](images/2c.png)
 
