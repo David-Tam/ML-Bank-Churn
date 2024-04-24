@@ -82,3 +82,9 @@ Now let's see the correlation matrix for all relevant variables. Irrelevant vari
 
 The corresponding heat map:
 ![alt text](images/corr_heatmap.png)
+
+## 3. Data Preparation
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/3.png)
+
+For each categorical variable, dummy variables are created for each type within the categorical variable.
