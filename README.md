@@ -90,7 +90,13 @@ In this project, 90% of the data is used for training and 10% for testing. Of co
 For each categorical variable, dummy variables are created for each type within the categorical variable.
 
 ## 4. XGB Classifier
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+First we used XGB classifier to model and make prediction. Here are the key settings:
+1. Logistic regression is used for the classification work.
+2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
+3. Scale_pos_weight = 5 since it is expected that more than 80% of clients stay (else the bank has a SEROUS problem).
+4. Only half features are used to train each tree.
+5. If there is no improvement in 10 rounds, stop training.
+6. Since it is a binary classification. Evaluation metric is set to be AUC.
 ![alt text](images/4a.png)
 
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
