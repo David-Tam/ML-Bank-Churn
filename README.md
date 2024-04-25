@@ -98,9 +98,12 @@ In this project, 90% of the data is used for training and 10% for testing. Of co
 
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/4c.png)
+![alt text](images/CM_xgb.png)
 
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/4d.png)
+![alt text](images/FI_xgb.png)
 
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/4e.png)
+![alt text](images/PI_xgb.png)
