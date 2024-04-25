@@ -107,34 +107,35 @@ Of course, we would like to see what feature affect most. The model indicates ag
 ![alt text](images/4d.png)
 ![alt text](images/FI_xgb.png)
 
-Also, if the values within a feature are shuffled, how are their importance change? It seems like age and number of bank products (1~2) are still important.
+Also, if the values within a feature are shuffled, how are their importance change? This permutation importance plot shows that the age and number of bank products (1~2) are important features (same as before).
 ![alt text](images/4e.png)
 ![alt text](images/PI_xgb.png)
 
 
 ## 5. GBM Classifier
-First we used XGB classifier to model and make prediction. Here are the key settings:
-1. Logistic regression is used for the classification work.
-2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
-3. Scale_pos_weight = 5 since it is expected that more than 80% of clients stay (else the bank has a SEROUS problem).
-4. Only half features are used to train each tree.
-5. Since it is a binary classification. Evaluation metric is set to be AUC. The training will stop when no improvement in 10 rounds.
+The key settings of GBM classifier are basically the same as the LGB one, but it is worth to mention that not only auc, but log loss and mean accuracy are also used to evaluate.
 ![alt text](images/5a.png)
 ![alt text](images/5b.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+Now let's see the confusion matrix:
 ![alt text](images/5c.png)
 ![alt text](images/CM_gbm.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+The feature importance:
 ![alt text](images/5d.png)
 ![alt text](images/FI_gbm.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+And the permutation importance:
 ![alt text](images/5e.png)
 ![alt text](images/PI_gbm.png)
 
 ## 6. ROC analysis
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+Let's compare the models' quality. An useful tool to see a classifier’s performance is the ROC curve. The ROC curve indicates how the true positive (TP) rate (sensitivity) and false positive (FP) rate (1- specificity) change by varying the probability threshold in a classifier.
+
+Each point at the curve contains TP and FP rate at a threshold. A perfect classifier would have the TP rate
+= 1, and the FP rate = 0, where a perfectly random classifier would have a diagonal line as a ROC curve.
+In principle, if the TP and FP rate are known at a given threshold, all matrix elements in confusion matrix can be
+calculated. Essentially, the ROC curve captures all confusion matrices for all thresholds.
+
 ![alt text](images/6.png)
 ![alt text](images/ROC.png)
