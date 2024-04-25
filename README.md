@@ -137,5 +137,6 @@ Each point at the curve contains TP and FP rate at a threshold. A perfect classi
 In principle, if the TP and FP rate are known at a given threshold, all matrix elements in confusion matrix can be
 calculated. Essentially, the ROC curve captures all confusion matrices for all thresholds.
 
+It seems that both classifiers have almost same quality for this classification project, but LGB classifier may have a slightly better result:
 ![alt text](images/6.png)
 ![alt text](images/ROC.png)
