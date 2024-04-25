@@ -127,3 +127,8 @@ In this project, 90% of the data is used for training and 10% for testing. Of co
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/5e.png)
 ![alt text](images/PI_gbm.png)
+
+## 6. ROC analysis
+In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+![alt text](images/6.png)
+![alt text](images/ROC.png)
