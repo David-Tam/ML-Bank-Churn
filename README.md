@@ -97,28 +97,29 @@ First we used XGB classifier to model and make prediction. Here are the key sett
 4. Only half features are used to train each tree.
 5. Since it is a binary classification. Evaluation metric is set to be AUC. The training will stop when no improvement in 10 rounds.
 ![alt text](images/4a.png)
-
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/4b.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+Lets make some predictions and validate! It is easy to see the model's quality with a confusion matrix. True and predicted label indicate the distributions in reality and model prediction.
 ![alt text](images/4c.png)
 ![alt text](images/CM_xgb.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+Of course, we would like to see what feature affect most. The model indicates age, number of bank products (1~3) and active member status affect a client decision most.
 ![alt text](images/4d.png)
 ![alt text](images/FI_xgb.png)
 
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+Also, if the values within a feature are shuffled, how are their importance change? It seems like age and number of bank products (1~2) are still important.
 ![alt text](images/4e.png)
 ![alt text](images/PI_xgb.png)
 
 
 ## 5. GBM Classifier
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
+First we used XGB classifier to model and make prediction. Here are the key settings:
+1. Logistic regression is used for the classification work.
+2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
+3. Scale_pos_weight = 5 since it is expected that more than 80% of clients stay (else the bank has a SEROUS problem).
+4. Only half features are used to train each tree.
+5. Since it is a binary classification. Evaluation metric is set to be AUC. The training will stop when no improvement in 10 rounds.
 ![alt text](images/5a.png)
-
-In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/5b.png)
 
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
