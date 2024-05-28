@@ -27,10 +27,10 @@ The project will be presented in the following structure:
 
 # 1. Data Access
 
-Let's load up the dataset. Note that a data point will be droped if there is any missing piece within a client's data.
+Let's load up the dataset and drop the instances/ observations which contain any missing piece:
 ![alt text](images/1.png)
 
-It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
+There are 9998 client instance and 14 variables: 13 explanatory and 1 response variable.
 
 # 2. Data Visualization
 Info of each variable can be accessed through pie charts. But let's have a look on how much clients left the bank.
