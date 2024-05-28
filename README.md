@@ -94,7 +94,7 @@ For each categorical variable, dummy variables are created for each type within 
 
 # 4. XGB Classifier
 First we used XGB classifier to model and make prediction. Here are the key settings:
-1. Logistic regression is used for the classification work.
+1. Logistic regression is used for this binary classification work.
 2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
 3. Scale_pos_weight = 5 since it is expected that more than 80% of clients stay (else the bank has a SEROUS problem).
 4. Only half features are used to train each tree.
@@ -102,11 +102,11 @@ First we used XGB classifier to model and make prediction. Here are the key sett
 ![alt text](images/4a.png)
 ![alt text](images/4b.png)
 
-Lets make some predictions and validate! It is easy to see the model's quality with a confusion matrix. True and predicted label indicate the distributions in reality and model prediction.
+Lets make some predictions and validate! It is easy to see the model's quality with a confusion matrix. True and predicted labels indicate the distributions in reality and model prediction.
 ![alt text](images/4c.png)
 ![alt text](images/CM_xgb.png)
 
-Of course, we would like to see what feature affect most. The model indicates age, number of bank products (1~3) and active member status affect a client decision most.
+Of course, we would like to see what features affect most. The model indicates age, number of bank products (1~3) and active member status affect a client decision most.
 ![alt text](images/4d.png)
 ![alt text](images/FI_xgb.png)
 
@@ -135,10 +135,10 @@ And the permutation importance:
 # 6. ROC analysis
 Let's compare the models' quality. An useful tool to see a classifier’s performance is the ROC curve. The ROC curve indicates how the true positive (TP) rate (sensitivity) and false positive (FP) rate (1- specificity) change by varying the probability threshold in a classifier.
 
-Each point at the curve contains TP and FP rate at a threshold. A perfect classifier would have the TP rate
+Each point of the curve contains TP and FP rate at a threshold. A perfect classifier would have the TP rate
 = 1, and the FP rate = 0, where a perfectly random classifier would have a diagonal line as a ROC curve.
 In principle, if the TP and FP rate are known at a given threshold, all matrix elements in confusion matrix can be
-calculated. Essentially, the ROC curve captures all confusion matrices for all thresholds.
+calculated. Essentially, the ROC curve captures all confusion matrices and the matrix elements for all thresholds.
 
 It seems that both classifiers have almost same quality for this classification project, but LGB classifier may have a slightly better result:
 ![alt text](images/6.png)
