@@ -78,10 +78,12 @@ Their salary?
 ![alt text](images/EstimatedSalary.png)
 
 ## c) Correlation matrix
-Now let's see the correlation matrix for all relevant variables. Irrelevant variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset.
+Now let's see the correlation matrix for all relevant variables. This matrix roughly shows the "relationship" between varaibles.
+
+Irrelevant variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset.
 ![alt text](images/2d.png)
 
-The corresponding heat map:
+The corresponding confusion matrix is shown in the following heat map:
 ![alt text](images/corr_heatmap.png)
 
 # 3. Data Preparation
