@@ -24,7 +24,8 @@ The project will be presented in the following structure:
 **6. ROC curves analysis**
 
 ## 1. Data Access
-First of all, let's load up the dataset. Note that a data point will be droped if there is any missing piece within a client's data.
+
+Let's load up the dataset. Note that a data point will be droped if there is any missing piece within a client's data.
 ![alt text](images/1.png)
 
 It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
