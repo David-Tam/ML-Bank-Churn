@@ -62,7 +62,7 @@ Are the clients active members (0 = no, 1 = yes)?
 
 
 ## b) Continuous Variables
-Similarly, a for-loop is used to visualize all continuous variables. Distribution of each client type (excited or not) will be shown in each continuous variable.
+Similarly, a for-loop is used to visualize all continuous variables. Distribution of excited (orange) and current (blue) clients are shown for each continuous variable.
 ![alt text](images/2c.png)
 
 The credit score distributions:
