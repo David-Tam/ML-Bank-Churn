@@ -1,5 +1,5 @@
 # ML-Bank-Churn
-This is a machine learning project on kaggle that aims to predict if a bank customer is going to leave the bank or continue to be a costumer.
+This is a machine learning exerxise that aims to predict if a bank customer is going to leave the bank or continue to be a costumer.
 
 The description can be found in:
 
@@ -23,14 +23,16 @@ The project will be presented in the following structure:
 
 **6. ROC curves analysis**
 
-## 1. Data Access
+*********************************************************************************************************************
+
+# 1. Data Access
 
 Let's load up the dataset. Note that a data point will be droped if there is any missing piece within a client's data.
 ![alt text](images/1.png)
 
 It has a dimension of 9998-by-14: 9998 client data points and 14 variables.
 
-## 2. Data Visualization
+# 2. Data Visualization
 Info of each variable can be accessed through pie charts. But let's have a look on how much clients left the bank.
 
 The "Exited" variable indicates if the client left the bank or not:
@@ -38,7 +40,7 @@ The "Exited" variable indicates if the client left the bank or not:
 
 Now let's see all categorical and continuous variables in the dataset.
 
-### a) Categorical Variables
+## a) Categorical Variables
 A for-loop is used to visualize all categorical variables.
 ![alt text](images/2b.png)
 
@@ -61,7 +63,7 @@ Are the clients active (0 means no)?
 ![alt text](images/IsActiveMember.png)
 
 
-### b) Continuous Variables
+## b) Continuous Variables
 Similarly, a for-loop is used to visualize all continuous variables. Distribution of each client type (excited or not) will be shown in each continuous variable.
 ![alt text](images/2c.png)
 
@@ -77,20 +79,20 @@ How are their account balance?
 Their salary?
 ![alt text](images/EstimatedSalary.png)
 
-### c) Correlation matrix
+## c) Correlation matrix
 Now let's see the correlation matrix for all relevant variables. Irrelevant variables: 'RowNumber', 'CustomerID', 'Surname', 'Geography' are removed from the dataset.
 ![alt text](images/2d.png)
 
 The corresponding heat map:
 ![alt text](images/corr_heatmap.png)
 
-## 3. Data Preparation
+# 3. Data Preparation
 In this project, 90% of the data is used for training and 10% for testing. Of course, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/3.png)
 
 For each categorical variable, dummy variables are created for each type within the categorical variable.
 
-## 4. XGB Classifier
+# 4. XGB Classifier
 First we used XGB classifier to model and make prediction. Here are the key settings:
 1. Logistic regression is used for the classification work.
 2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
@@ -113,7 +115,7 @@ Also, if the values within a feature are shuffled, how are their importance chan
 ![alt text](images/PI_xgb.png)
 
 
-## 5. GBM Classifier
+# 5. GBM Classifier
 The key settings of GBM classifier are basically the same as the LGB one, but it is worth to mention that not only auc, but log loss and mean accuracy are also used to evaluate.
 ![alt text](images/5a.png)
 ![alt text](images/5b.png)
@@ -130,7 +132,7 @@ And the permutation importance:
 ![alt text](images/5e.png)
 ![alt text](images/PI_gbm.png)
 
-## 6. ROC analysis
+# 6. ROC analysis
 Let's compare the models' quality. An useful tool to see a classifier’s performance is the ROC curve. The ROC curve indicates how the true positive (TP) rate (sensitivity) and false positive (FP) rate (1- specificity) change by varying the probability threshold in a classifier.
 
 Each point at the curve contains TP and FP rate at a threshold. A perfect classifier would have the TP rate
