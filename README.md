@@ -5,7 +5,7 @@ The description can be found in:
 
 https://www.kaggle.com/competitions/playground-series-s4e1/overview
 
-The datasets can be accessed here:
+The datasets can be accessed in this directory, or here:
 
 https://www.kaggle.com/datasets/shubhammeshram579/bank-customer-churn-prediction/data
 
