@@ -68,10 +68,10 @@ Similarly, a for-loop is used to visualize all continuous variables. Distributio
 The credit score distributions:
 ![alt text](images/CreditScore.png)
 
-Age distribution:
+Age distributions:
 ![alt text](images/Age.png)
 
-How are their account balance?
+Account balance distributions:
 ![alt text](images/Balance.png)
 
 Their salary?
