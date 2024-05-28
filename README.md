@@ -33,9 +33,7 @@ Let's load up the dataset and drop the instances/ observations which contain any
 There are 9998 client instance and 14 variables: 13 explanatory and 1 response variable.
 
 # 2. Data Visualization
-Info of each variable can be accessed through pie charts. But let's have a look on how much clients left the bank.
-
-The "Exited" variable indicates if the client left the bank or not:
+Let's have a look on how much clients left the bank. The "Exited" variable indicates if the client left the bank or not:
 ![alt text](images/2a.png)
 
 Now let's see all categorical and continuous variables in the dataset.
@@ -53,13 +51,13 @@ Number of years the customers with the bank:
 Number of bank products clients using:
 ![alt text](images/NumOfProducts.png)
 
-Do the clients have credit card (0 means no)?
+Do the clients have credit card (0 = no, 1 = yes)?
 ![alt text](images/HasCrCard.png)
 
-Where are the clients?
+Where do the clients live?
 ![alt text](images/Geography.png)
 
-Are the clients active (0 means no)?
+Are the clients active members (0 = no, 1 = yes)?
 ![alt text](images/IsActiveMember.png)
 
 
