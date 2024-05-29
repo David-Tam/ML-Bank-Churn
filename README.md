@@ -102,7 +102,8 @@ First we used XGB classifier to model and make prediction. Here are the key sett
 ![alt text](images/4a.png)
 ![alt text](images/4b.png)
 
-Lets make some predictions and validate! It is easy to see the model's quality with a confusion matrix. True and predicted labels indicate the distributions in reality and model prediction.
+Lets make some predictions and validate! It is easy to see the model's quality with a confusion matrix. True and predicted labels indicate the distributions in reality and model prediction. It looks like the number of false negative (FN) is high, but this is okay: The only focus for us is to prevent misclassifying those client, who is actually leaving the bank, into the staying group (We do not want high false positive!).
+
 ![alt text](images/4c.png)
 ![alt text](images/CM_xgb.png)
 
@@ -120,7 +121,7 @@ The key settings of GBM classifier are basically the same as the LGB one, but it
 ![alt text](images/5a.png)
 ![alt text](images/5b.png)
 
-Now let's see the confusion matrix:
+Now let's see the confusion matrix. Same as before, we only want to prevent the high false positive result.
 ![alt text](images/5c.png)
 ![alt text](images/CM_gbm.png)
 
