@@ -1,5 +1,5 @@
 # ML-Bank-Churn
-This is a machine learning exerxise that aims to predict if a bank customer is going to leave the bank or continue to be a costumer.
+This is a machine learning exerxise that aims to predict if a bank customer is going to leave the bank or continue to be a costumer. Note that gradient-boosting frameworks XGBoost and LightGBM are used to perform this task.
 
 The description can be found in:
 
