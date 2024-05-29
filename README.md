@@ -143,3 +143,10 @@ calculated. Essentially, the ROC curve captures all confusion matrices and the m
 It seems that both classifiers have almost same quality for this classification project, but LGB classifier may have a slightly better result:
 ![alt text](images/6.png)
 ![alt text](images/ROC.png)
+
+*************************************************************************************************************************
+# Conclusion and Business Insight
+
+This project shows a possible way to predict whether a customer will stay or leave a bank, based on the past financial history of the bank's clients. Both XGBoost and Lightgbm give a similar result with good accuracy. However, XGBoost shows that "Age" and "Number Of Products" are important features for customer's decision, but Lightgbm shows that "Age", "Balance" and "Credit Score" are the ones.
+
+More importantly, these features can help a bank to keep their clients. For example, the bank can establish new programs for different age groups, with different special offers (such as no monthly fee for students/elderlies, low financing intereset rate for middle age).
