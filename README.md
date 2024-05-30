@@ -90,7 +90,7 @@ The corresponding confusion matrix is shown in the following heat map:
 In this project, 90% of the data is used for training and 10% for testing. Again, our response variable is 'Exited' as we want to prediction if a client is staying (or not):
 ![alt text](images/3.png)
 
-For each categorical variable, dummy variables are created for each type within the categorical variable.
+For each categorical variable, dummy variables are created for each type within the categorical variable. Also, "RowNumber", "CustomerID" and "Surname" are removed as they are irrelevant.
 
 # 4. XGB Classifier
 First we used XGB classifier to model and make prediction. Here are the key settings:
