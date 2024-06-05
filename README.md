@@ -95,7 +95,7 @@ For each categorical variable, dummy variables are created for each type within 
 # 4. XGB Classifier
 First we used XGB classifier to model and make prediction. Here are the key settings:
 1. Logistic regression is used for this binary classification work.
-2. Gamma = 1 and subsample = 0.9 to allow a flexible/complex model. The depth = 5 and reg_lambda = 10 to prevent overfitting.
+2. Gamma = 1 (for branches pruning) and subsample = 0.9 to allow a flexible/complex model. The tree depth = 5 (~half of the number of paramter) and reg_lambda = 10 (for similarity and output calculation) to prevent overfitting.
 3. Scale_pos_weight = 5 since it is expected that more than 80% of clients stay (else the bank has a SEROUS problem).
 4. Only half features are used to train each tree.
 5. Since it is a binary classification. Evaluation metric is set to be AUC. The training will stop when no improvement in 10 rounds.
